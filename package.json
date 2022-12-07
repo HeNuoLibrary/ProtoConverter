@@ -1,0 +1,12 @@
+{
+  "name": "com.henuo.protoconverter",
+  "displayName": "ProtoConverter",
+  "version": "0.1.0",
+  "unity": "2021.3",
+  "description": "这是一个Proto协议转换器\n你也可以通过这个协议转换器导出Protoc.exe程序 进行自定义批处理",
+  "author": {
+    "name": "HeNuo",
+    "email": "HeNuo@heNuo.com",
+    "url": "https://github.com/HeNuoLibrary/"
+  }
+}
