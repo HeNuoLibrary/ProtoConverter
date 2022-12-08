@@ -6,7 +6,6 @@ using UnityEngine;
 
 namespace Protoconverter.Editor
 {
-
     /// <summary>
     /// 协议转换窗口 
     /// </summary>
@@ -42,14 +41,14 @@ namespace Protoconverter.Editor
             GUILayout.Space(5f);
             EditorGUILayout.LabelField("转换", EditorStyles.boldLabel);
             EditorGUILayout.BeginVertical("box");
-            GUIItem("", "转换", m_Controller.ConvertToCSharp);
+            GUIItem("内部到处使用,proto.txt也可转换", "C#转换", m_Controller.ConvertToCSharp);
+            GUIItem("外部网络通讯使用,仅支持proto文件", "Exe转换", m_Controller.GenProtoCSFile);
             EditorGUILayout.EndVertical();
 
             GUILayout.Space(5f);
             EditorGUILayout.LabelField("导出", EditorStyles.boldLabel);
             EditorGUILayout.BeginVertical("box");
-            GUIItem("", "导出程序包", m_Controller.ExportPackage);
-            GUIItem("", "导出protobuf-net.dll", m_Controller.ExportProtobufDll);
+            GUIItem("导出程序包  脱离编辑器使用  需要按照说明配置bat文件", "导出程序包", m_Controller.ExportPackage);
             EditorGUILayout.EndVertical();
         }
 
